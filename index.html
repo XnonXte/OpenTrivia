@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="OpenTrivia Game"
+      description="Plays a Trivia Game in your browser!"
+    />
+    <title>OpenTrivia Game | Powered by opentdb.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="top-heading"></div>
+    <div class="container">
+      <h1 id="title">OpenTrivia</h1>
+      <p id="start-paragraph" class="para">
+        The source of the code is based on a
+        <a href="https://www.youtube.com/watch?v=riDzcEQbX6k">video</a> from Web
+        Dev Simplified that I have expanded on there! This trivia game retrieves
+        data from <a href="https://opentdb.com">opentdb.com</a> and then
+        presents the questions in such a nice and elegant way! Written with
+        HTML, CSS, and vanilla JavaScript.
+      </p>
+      <p id="end-message" class="para hide">
+        Congratulations! You have completed this trivia with
+        <span id="correct-guess"></span> correct guess(es) and
+        <span id="wrong-guess"></span> wrong guess(es)! Click restart to start
+        the trivia again.
+      </p>
+      <article>
+        <div id="question-container" class="hide">
+          <h2 id="question"></h2>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn" type="button"></button>
+            <button class="btn" type="button"></button>
+            <button class="btn" type="button"></button>
+            <button class="btn" type="button"></button>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="start-btn" class="start-btn btn" type="button">
+            Start Trivia!
+          </button>
+          <button id="next-btn" class="next-btn btn hide" type="button">
+            Next
+          </button>
+        </div>
+      </article>
+      <footer>
+        <h3 id="footer-heading">&copy; XnonXte 2023</h3>
+        <p class="para">This application is under MIT license.</p>
+      </footer>
+    </div>
+  </body>
+</html>
