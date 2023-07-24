@@ -8,9 +8,10 @@ const correctGuessDisplay = document.getElementById("correct-guess");
 const wrongGuessDisplay = document.getElementById("wrong-guess");
 const endMessage = document.getElementById("end-message");
 
-const questions = [];
-
-let currentQuestionIndex, correctGuess, wrongGuess;
+let currentQuestionIndex,
+  correctGuess,
+  wrongGuess,
+  questions = [];
 
 // Fetch questions data from opentdb.com API endpoint.
 function getQuestions(callback) {
@@ -51,6 +52,7 @@ nextButton.addEventListener("click", () => {
 // What it does is to create a random shuffled answers for each question.
 // This will remove the 'hide' class off questionContainerElement where our question + answer elements are stored.
 function startGame() {
+  questions = [];
   getQuestions(() => {
     startButton.classList.add("hide");
     startParagraph.classList.add("hide");
