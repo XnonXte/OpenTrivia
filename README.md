@@ -4,8 +4,7 @@ The source of the code is based on a [video](https://www.youtube.com/watch?v=riD
 
 ## Information
 
-This trivia game retrieves data from [opentdb.com](https://opentdb.com/) and then presents the questions in such a nice and elegant way! Written with HTML, CSS, and vanilla JavaScript. The source code has been heavily commented, with a handful of bug fixes along the way as well.
-The website is free to use for everyone at: -- TODO: Add the website link here --
+This trivia game retrieves data from [opentdb.com](https://opentdb.com/) and then presents the questions in such a nice and elegant way! Written with HTML, CSS, and vanilla JavaScript. The source code has been heavily commented, with a handful of bug fixes along the way as well. The website is free to use for everyone at [here](opentrivia.quddus-salamsal.repl.co)
 
 ## How-To-Install
 
